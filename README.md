@@ -160,6 +160,7 @@ Content-Type: application/json
 ## 🚀 Despliegue
 
 ### Railway
+- https://backendingweb-production.up.railway.app/actuator/health
 ```
 
 ### Problemas Comunes
