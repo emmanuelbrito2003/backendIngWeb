@@ -44,6 +44,9 @@ public class SecurityConfig {
                 .requestMatchers("/api/public/**").permitAll()
                 .requestMatchers("/error").permitAll()
                 
+                // Actuator endpoints - PERMITIR ACCESO PÚBLICO
+                .requestMatchers("/actuator/**").permitAll()
+                
                 // Rutas solo para ADMIN
                 .requestMatchers(HttpMethod.GET, "/api/empleados").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.POST, "/api/empleados").hasRole("ADMIN")
